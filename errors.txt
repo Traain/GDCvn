@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 7: invalid syntax
-    Character "Anemo Slime(s)"
-                              ^
+File "game/script.rpy", line 33: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "No, let's play Cookie Clicker"
+                                   ^
 
 Ren'Py Version: Ren'Py 7.4.6.1693
-Fri Oct 15 10:34:18 2021
+Fri Oct 15 15:29:10 2021

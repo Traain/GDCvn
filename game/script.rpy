@@ -5,6 +5,7 @@
 
 define anemo = Character ("Anemo Slime(s)")
 define h = Character ("Harry")
+define c = Character ("Crewmate")
 
 # The game starts here.
 
@@ -18,23 +19,33 @@ label start:
 
     show mango 
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    show crewmate
 
-    show anemoslime happy
+    python:
+            name = renpy.input("Enter your name")
+            name = name.strip() or "Default Joe"
 
-    # These display lines of dialogue.
+    c "sussy"
 
-    anemo "You've created a new Ren'Py game."
+    c "yoooooo what's up [name]"
 
-    anemo "Once you add a story, pictures, and music, you can release it to the world!"
+    menu:
+        
+        "Yes, let's play Among Us":
+            jump agree
+        
+        "No, let's play Cookie Clicker":
+            jump diagree
 
-    show anemoslime group
-    # This ends the game.
-
-    anemo "Now we are a group"
-
-  
+    label agree:
+        $ importantdecisionagree = True
+        c "Yay!"
 
     return
+
+    label disagree:
+        $ importantdecisionagree = False
+        c "No you sussy baka"
+
+    return
+
