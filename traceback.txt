@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+WindowsError: [Error 32] The process cannot access the file because it is being used by another process: u'C:\\Users\\trinity\\AppData\\Roaming/RenPy/GDCvn-1634265401\\persistent'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\trinity\Downloads\renpy-7.4.6-sdk/renpy/bootstrap.py", line 326, in bootstrap
+    renpy.main.main()
+  File "C:\Users\trinity\Downloads\renpy-7.4.6-sdk/renpy/main.py", line 620, in main
+    renpy.persistent.update(True)
+  File "C:\Users\trinity\Downloads\renpy-7.4.6-sdk/renpy/persistent.py", line 393, in update
+    save()
+  File "C:\Users\trinity\Downloads\renpy-7.4.6-sdk/renpy/persistent.py", line 409, in save
+    renpy.loadsave.location.save_persistent(data)
+  File "C:\Users\trinity\Downloads\renpy-7.4.6-sdk/renpy/savelocation.py", line 482, in save_persistent
+    l.save_persistent(data)
+  File "C:\Users\trinity\Downloads\renpy-7.4.6-sdk/renpy/savelocation.py", line 342, in save_persistent
+    safe_rename(fn_new, fn)
+  File "C:\Users\trinity\Downloads\renpy-7.4.6-sdk/renpy/loadsave.py", line 304, in safe_rename
+    os.unlink(new)
+WindowsError: [Error 32] The process cannot access the file because it is being used by another process: u'C:\\Users\\trinity\\AppData\\Roaming/RenPy/GDCvn-1634265401\\persistent'
+
+Windows-10-10.0.19041
+Ren'Py 7.4.6.1693
+GDCvn 1.0
+Fri Oct 15 10:36:17 2021

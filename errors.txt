@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 7: invalid syntax
+    Character "Anemo Slime(s)"
+                              ^
+
+Ren'Py Version: Ren'Py 7.4.6.1693
+Fri Oct 15 10:34:18 2021
